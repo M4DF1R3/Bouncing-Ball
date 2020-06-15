@@ -107,12 +107,6 @@ function mousedownHandler() {
         yspd: Math.randomDec(-2, 2),
         col: Math.randomElement(colorNames)
     });
-    // for (let i = 0; i < balls.length; i++) {
-    //     if (-10 < balls[i].x - mouseX < 10 && -10 < balls[i].y - mouseY < 10) {
-    //         balls.splice(i - 1, 1)
-    //         console.log(balls)
-    //     }
-    // }
 }
 
 function checkBallCollision(index) {
@@ -139,6 +133,3 @@ function ballsCollision(ball1, ball2) {
         return true;
     }
 }
-
-// Helping Sources
-//https://www.khanacademy.org/science/physics/linear-momentum/momentum-tutorial/a/what-are-two-dimensional-collisions
